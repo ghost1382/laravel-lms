@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Lesson extends Model
 {
     use HasFactory;
-
+    protected $fillable = ['title', 'description', 'user_id', 'category_id', 'file'];
     protected $guarded = [];
 
     public function module()

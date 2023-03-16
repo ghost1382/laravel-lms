@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useForm } from '@inertiajs/inertia-react';
 import Button from '@/Components/Button';
-import LessonFields from '../../../Components/Admin/Lesson/LessonFields';
+import LessonFields from './LessonFields';
 import ValidationErrors from '@/Components/ValidationErrors';
 
 export default function({course, module, lesson}){
