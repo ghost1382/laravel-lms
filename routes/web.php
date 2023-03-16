@@ -32,6 +32,7 @@ Route::get('/', function () {
     return Redirect::route('my-courses');
 });
 
+
 Route::middleware(['auth'])->group(function() {
     Route::resource('course', App\Http\Controllers\Front\CourseController::class)->only(['show']);
     Route::resource('course.module', App\Http\Controllers\Front\ModuleController::class)->only(['show']);
